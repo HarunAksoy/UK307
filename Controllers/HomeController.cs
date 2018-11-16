@@ -23,6 +23,8 @@ namespace GamingBlog.Controllers
             return View();
         }
 
+        
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -37,6 +39,15 @@ namespace GamingBlog.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult Blog()
+        {
+            return View();
+        }
+
+        public IActionResult Games()
         {
             return View();
         }
