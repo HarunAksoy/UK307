@@ -12,5 +12,17 @@ namespace GamingBlog.Data
             : base(options)
         {
         }
+
+
+        public DBSet<Blog> Blogs { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
+
+        public DbSet<Games> Game  {get; set; }
+
+        public DbSet<Login> Logins {get; set; }
+
+
     }
+
 }
