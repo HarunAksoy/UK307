@@ -10,25 +10,36 @@ namespace GamingBlog.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Contact()
+        
+        public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Games()
+        public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Blog()
+        public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
 
             return View();
         }
         
+        [HttpPost]
+        public IActionResult Contact(ContactViewModel vm)
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

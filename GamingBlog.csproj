@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <UserSecretsId>aspnet-GamingBlog-30779A70-2012-44B5-8DEB-CAF0839FDDFE</UserSecretsId>
+    <UserSecretsId>aspnet-GamingBlog-1D502DA8-EA42-47CC-96EF-F27E1FD1BB88</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

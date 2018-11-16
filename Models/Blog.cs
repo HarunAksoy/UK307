@@ -2,9 +2,9 @@ using System;
 
 namespace GamingBlog.Models
 {
-    public class Blog
+    public class blog
     {
-        public string RequestId { get; set; }
+        public string Id { get; set; }
      
     }
 }
