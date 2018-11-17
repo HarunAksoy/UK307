@@ -14,13 +14,13 @@ namespace GamingBlog.Data
         }
 
 
-        public DBSet<Blog> Blogs { get; set; }
+        public DbSet<GamingBlog.Models.Blog> Blogs { get; set; }
 
-        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<GamingBlog.Models.Contact> Contacts { get; set; }
 
-        public DbSet<Games> Game  {get; set; }
+        public DbSet<GamingBlog.Models.Games> Games  {get; set; }
 
-        public DbSet<Login> Logins {get; set; }
+        public DbSet<GamingBlog.Models.Comment> Logins {get; set; }
 
 
     }

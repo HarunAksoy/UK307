@@ -2,7 +2,7 @@ using System;
 
 namespace GamingBlog.Models
 {
-    public class blog
+    public class Blog
     {
         public long Id { get; set; }
 

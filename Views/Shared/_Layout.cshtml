@@ -17,6 +17,7 @@
     </environment>
 </head>
 <body>
+    <div style="background-color: black;"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -35,14 +36,22 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Blog">Blog</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a><form>
+                    <input class="searchgames" type="text" placeholder="Games suchen">
+                    </form></a></li>
+
+                    </ul>
                     
-                </ul>
+                
                 <partial name="_LoginPartial" />
+                
+                
             </div>
         </div>
     </nav>
-
     <partial name="_CookieConsentPartial" />
+
+    
 
     <div class="container body-content">
         @RenderBody()

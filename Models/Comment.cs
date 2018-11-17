@@ -2,7 +2,7 @@ using System;
 
 namespace GamingBlog.Models
 {
-    public class Games
+    public class Comment
     {
         public long Id { get; set; }       
 
