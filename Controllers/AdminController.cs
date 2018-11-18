@@ -10,9 +10,14 @@ namespace GamingBlog.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Admin()
+
+        public IActionResult Home()
         {
             return View();
+        }
+
+        public string Test(){
+            return "This ist testing";
         }
     }
 }
