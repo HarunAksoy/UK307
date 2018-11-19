@@ -4,7 +4,7 @@ namespace GamingBlog.Models
 {
     public class Contact
     {
-        public long Id { get; set; }
+        public long ContactID { get; set; }
 
         public string Name { get; set;}
 

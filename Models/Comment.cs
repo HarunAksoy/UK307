@@ -4,11 +4,11 @@ namespace GamingBlog.Models
 {
     public class Comment
     {
-        public long Id { get; set; }       
+        public long CommentId { get; set; }       
 
-        public string PersonName { get; set; }
+        public string Name { get; set; }
 
-        public DateTime CommentDate { get; set; }
+        public string CommentDate { get; set; }
 
         public string CommentText { get; set; }     
      
