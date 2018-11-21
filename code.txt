@@ -1,0 +1,50 @@
+push / commit:
+
+git init
+git add .
+git commit -m "text"
+git push -u origin master
+
+
+pull:
+
+pull all
+
+
+
+migrations:
+dotnet ef migrations add [NAME]
+dotnet ef database
+update
+
+dotnet aspnet-codegenerator identity -dc MyWeb.Data.ApplicationDbContext --files Account.NAME
+
+File List:
+Account.AccessDenied
+Account.ConfirmEmail
+Account.ExternalLogin
+Account.ForgotPassword
+Account.ForgotPasswordConfirmation
+Account.Lockout
+Account.Login
+Account.LoginWith2fa
+Account.LoginWithRecoveryCode
+Account.Logout
+Account.Manage._Layout
+Account.Manage._ManageNav
+Account.Manage._StatusMessage
+Account.Manage.ChangePassword
+Account.Manage.DeletePersonalData
+Account.Manage.Disable2fa
+Account.Manage.DownloadPersonalData
+Account.Manage.EnableAuthenticator
+Account.Manage.ExternalLogins
+Account.Manage.GenerateRecoveryCodes
+Account.Manage.Index
+Account.Manage.PersonalData
+Account.Manage.ResetAuthenticator
+Account.Manage.SetPassword
+Account.Manage.TwoFactorAuthentication
+Account.Register
+Account.ResetPassword
+Account.ResetPasswordConfirmation

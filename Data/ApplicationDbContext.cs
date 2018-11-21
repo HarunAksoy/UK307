@@ -22,7 +22,7 @@ namespace GamingBlog.Data
 
         public DbSet<Game> Games  {get; set; }
 
-        public DbSet<Comment> Logins {get; set; }
+        public DbSet<Comment> Comments {get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -49,6 +49,7 @@ namespace GamingBlog.Data
                 .RuleFor(gam => gam.GameID, () => gameIds++)
                 .RuleFor(gam => gam.Releasedate, f => f.Lorem.Slug(8))
                 .RuleFor(gam => gam.Content, f => f.Lorem.Slug(8));
+
                
             var commentIds = 1;
             var testComment = new Faker<Comment>()
@@ -110,7 +111,7 @@ namespace GamingBlog.Data
 
             }
 
-            foreach(var comment in testComment.Generate(20)) // posts / blogeinträge / Players
+             foreach(var comment in testComment.Generate(20)) // posts / blogeinträge / Players
             {
                 comments.Add(new
                 {

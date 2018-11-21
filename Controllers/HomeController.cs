@@ -29,6 +29,20 @@ namespace GamingBlog.Controllers
 
             return View();
         }
+
+        public IActionResult Games()
+        {
+            
+
+            return View();
+        }
+
+        public IActionResult Blog()
+        {
+            
+
+            return View();
+        }
         
         [HttpPost]
         public IActionResult Contact(ContactViewModel vm)
