@@ -67,7 +67,6 @@ namespace GamingBlog.Data
             
             
             
-            //var rnd = new Random();
 
             foreach(var blog in testBlog.Generate(1)) // thread, thema, Team
             {

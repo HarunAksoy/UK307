@@ -216,22 +216,22 @@ namespace GamingBlog.Migrations
             migrationBuilder.InsertData(
                 table: "Blogs",
                 columns: new[] { "BlogID", "Content", "Releasedate", "Title" },
-                values: new object[] { 1L, "optio-qui-molestias-harum-nisi-saepe-id-inventore", "ipsa-ut-nihil-atque-facilis-deserunt-a-nam", "esse-molestiae-vel-quia-debitis-quibusdam-doloribus-similique" });
+                values: new object[] { 1L, "dolorem-sapiente-et-aspernatur-dolorem-ut-qui-eum", "doloremque-similique-quod-sit-explicabo-nihil-dignissimos-aut", "cumque-quasi-pariatur-illo-et-est-consequatur-sunt" });
 
             migrationBuilder.InsertData(
                 table: "Comments",
                 columns: new[] { "CommentId", "CommentDate", "CommentText", "Name" },
-                values: new object[] { 1L, "cumque-ipsam-harum-rem-ipsam-incidunt-ratione-quae", "excepturi-facilis-assumenda-excepturi-quaerat-sunt-quibusdam-consequatur", "dolore-magni-voluptas-fugit-ut-odio-aut-ab" });
+                values: new object[] { 1L, "molestias-animi-corporis-nisi-ut-quaerat-minima-fugit", "non-rem-perferendis-ut-sunt-autem-sit-dignissimos", "dolorum-sapiente-est-repellendus-modi-quos-deleniti-ad" });
 
             migrationBuilder.InsertData(
                 table: "Contacts",
                 columns: new[] { "ContactID", "Email", "Message", "Name", "Subject" },
-                values: new object[] { 1L, "suscipit-sit-fugiat-voluptas-tempora-sit-blanditiis-aliquam", "odio-qui-minus-recusandae-quisquam-quis-harum-occaecati", "consectetur-et-nobis-veniam-recusandae-ut-autem-animi", "facere-ratione-porro-recusandae-sit-voluptate-ea-iste" });
+                values: new object[] { 1L, "dolor-qui-sit-et-vel-sit-explicabo-saepe", "delectus-et-dolore-iure-autem-molestias-modi-minus", "earum-dolor-architecto-sunt-in-totam-debitis-vero", "unde-aut-aperiam-impedit-repellendus-quidem-nesciunt-aut" });
 
             migrationBuilder.InsertData(
                 table: "Games",
                 columns: new[] { "GameID", "Content", "Name", "Releasedate" },
-                values: new object[] { 1L, "est-magnam-debitis-adipisci-quia-et-est-repellendus", "eligendi-facere-perferendis-tempora-aut-impedit-quidem-architecto", "neque-qui-ratione-ipsam-omnis-et-iusto-consequatur" });
+                values: new object[] { 1L, "et-omnis-unde-et-recusandae-maxime-mollitia-corporis", "dolorum-totam-fugit-quo-laborum-et-ipsum-natus", "eligendi-rerum-unde-consequatur-explicabo-cupiditate-nostrum-aut" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

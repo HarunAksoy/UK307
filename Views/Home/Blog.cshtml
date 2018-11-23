@@ -1,8 +1,24 @@
-@model GamingBlog.Models.BlogViewModel
-
+@model IEnumerable<Blog>
 @{
     ViewData["Title"] = "Blog";
-
 }
 
+    <h2 style="font-family: Permanent Marker">@ViewData["Title"]</h2>
+    <hr/>
 
+        
+        @foreach (Blog blog in Model)
+        {
+            <div class="blogalignment">
+                <h3>Title</h3>
+                <p>@blog.Title<br></p>
+                <h3>Releasedate</h3>
+                <p>@blog.Releasedate<br></p>
+                <h3>Content</h3>
+                <p>@blog.Content<br></p>
+                <br><br>
+                <hr>
+            </div>
+            
+        }
+   

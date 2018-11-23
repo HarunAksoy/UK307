@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Rajdhani|Teko');
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1174,7 +1176,6 @@ hr {
   cursor: pointer;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -1190,6 +1191,18 @@ h6,
   line-height: 1.1;
   color: inherit;
 }
+
+.blogalignment{
+  text-align: center;
+}
+
+h2{
+  font-family: 'Permanent Marker', cursive;
+}
+p{
+  font-family: "Rajdhani sans-serif"
+}
+
 h1 small,
 h2 small,
 h3 small,

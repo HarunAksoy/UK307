@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GamingBlog.Models;
+using System.Data.SqlClient;
 
 
 namespace GamingBlog.Controllers
@@ -25,12 +26,6 @@ namespace GamingBlog.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-
-
-            return View();
-        }
 
         public IActionResult Contact()
         {
@@ -47,10 +42,12 @@ namespace GamingBlog.Controllers
         
         public IActionResult Blog()
         {
-
-            
-            return View(_context.Blogs);
+            return View (from blog in _context.Blogs.Take(10)
+                         select blog);
         }
+
+ 
+            
         
 
 

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GamingBlog.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20181122150808_DbSeed")]
+    [Migration("20181123105231_DbSeed")]
     partial class DbSeed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace GamingBlog.Migrations
                     b.ToTable("Blogs");
 
                     b.HasData(
-                        new { BlogID = 1L, Content = "optio-qui-molestias-harum-nisi-saepe-id-inventore", Releasedate = "ipsa-ut-nihil-atque-facilis-deserunt-a-nam", Title = "esse-molestiae-vel-quia-debitis-quibusdam-doloribus-similique" }
+                        new { BlogID = 1L, Content = "dolorem-sapiente-et-aspernatur-dolorem-ut-qui-eum", Releasedate = "doloremque-similique-quod-sit-explicabo-nihil-dignissimos-aut", Title = "cumque-quasi-pariatur-illo-et-est-consequatur-sunt" }
                     );
                 });
 
@@ -57,7 +57,7 @@ namespace GamingBlog.Migrations
                     b.ToTable("Comments");
 
                     b.HasData(
-                        new { CommentId = 1L, CommentDate = "cumque-ipsam-harum-rem-ipsam-incidunt-ratione-quae", CommentText = "excepturi-facilis-assumenda-excepturi-quaerat-sunt-quibusdam-consequatur", Name = "dolore-magni-voluptas-fugit-ut-odio-aut-ab" }
+                        new { CommentId = 1L, CommentDate = "molestias-animi-corporis-nisi-ut-quaerat-minima-fugit", CommentText = "non-rem-perferendis-ut-sunt-autem-sit-dignissimos", Name = "dolorum-sapiente-est-repellendus-modi-quos-deleniti-ad" }
                     );
                 });
 
@@ -83,7 +83,7 @@ namespace GamingBlog.Migrations
                     b.ToTable("Contacts");
 
                     b.HasData(
-                        new { ContactID = 1L, Email = "suscipit-sit-fugiat-voluptas-tempora-sit-blanditiis-aliquam", Message = "odio-qui-minus-recusandae-quisquam-quis-harum-occaecati", Name = "consectetur-et-nobis-veniam-recusandae-ut-autem-animi", Subject = "facere-ratione-porro-recusandae-sit-voluptate-ea-iste" }
+                        new { ContactID = 1L, Email = "dolor-qui-sit-et-vel-sit-explicabo-saepe", Message = "delectus-et-dolore-iure-autem-molestias-modi-minus", Name = "earum-dolor-architecto-sunt-in-totam-debitis-vero", Subject = "unde-aut-aperiam-impedit-repellendus-quidem-nesciunt-aut" }
                     );
                 });
 
@@ -103,7 +103,7 @@ namespace GamingBlog.Migrations
                     b.ToTable("Games");
 
                     b.HasData(
-                        new { GameID = 1L, Content = "est-magnam-debitis-adipisci-quia-et-est-repellendus", Name = "eligendi-facere-perferendis-tempora-aut-impedit-quidem-architecto", Releasedate = "neque-qui-ratione-ipsam-omnis-et-iusto-consequatur" }
+                        new { GameID = 1L, Content = "et-omnis-unde-et-recusandae-maxime-mollitia-corporis", Name = "dolorum-totam-fugit-quo-laborum-et-ipsum-natus", Releasedate = "eligendi-rerum-unde-consequatur-explicabo-cupiditate-nostrum-aut" }
                     );
                 });
 
