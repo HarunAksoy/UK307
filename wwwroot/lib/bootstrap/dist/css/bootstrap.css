@@ -11,7 +11,8 @@ html {
 }
 body {
   margin: 0;
-  padding-top: 70px; 
+  padding-top: 60px;
+
 }
 article,
 aside,
@@ -1462,6 +1463,8 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  
+
   .dl-horizontal dd {
     margin-left: 180px;
   }
@@ -1589,7 +1592,7 @@ pre code {
   margin-left: auto;
 }
 .body-content {
-  margin-top: 300px;
+  margin-top: 9%;
 }
 @media (min-width: 768px) {
   .container {
@@ -4169,8 +4172,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
+  min-height: 20%;
+  margin-bottom: 100px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4604,10 +4607,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 
+
+.navbar{
+background-image: url("pictures/banneredit.jpg");
+
+
+}
+
 .navbar-inverse .navbar-brand {
   color: #39AEB2;
   
 }
+
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #fff;

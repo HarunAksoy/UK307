@@ -14,8 +14,7 @@ pull all
 
 migrations:
 dotnet ef migrations add [NAME]
-dotnet ef database
-update
+dotnet ef database update
 
 dotnet aspnet-codegenerator identity -dc MyWeb.Data.ApplicationDbContext --files Account.NAME
 

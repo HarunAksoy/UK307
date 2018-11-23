@@ -21,8 +21,7 @@ namespace GamingBlog.Areas.Identity.Pages.Account.Manage
         public static string PersonalData => "PersonalData";
 
         public static string TwoFactorAuthentication => "TwoFactorAuthentication";
-        public static string EditGames => "EditGames";
-        public static string EditBlog => "EditBlog";
+     
 
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
 
@@ -38,9 +37,7 @@ namespace GamingBlog.Areas.Identity.Pages.Account.Manage
 
         public static string TwoFactorAuthenticationNavClass(ViewContext viewContext) => PageNavClass(viewContext, TwoFactorAuthentication);
 
-        public static string EditGamesNavClass(ViewContext viewContext) => PageNavClass(viewContext, EditGames);
 
-        public static string EditBlogNavClass(ViewContext viewContext) => PageNavClass(viewContext, EditBlog);
 
 
     

@@ -1,27 +1,34 @@
-﻿@model GamingBlog.Models.ContactViewModel
+﻿@model GamingBlog.Models.Contact
 
 @{
     ViewData["Title"] = "Contact";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
-
-<form>
-    Name:
-    <input asp-for="Name" type="text">
-    Message:
-    <input type="text">
-    <input type="submit">
-</form>
+<div class="row">
+    <div class="col-md-4">
+        <form  method="post">
+            
+            <hr />
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" asp-for="@Model.Name" class="form-control" />
+            </div>
+            <label>E-Mail</label>
+            <div class="form-group">
+                <input type="text" asp-for="@Model.Email" class="form-control" />
+            </div>
+            <label>Subject</label>
+            <div class="form-group">
+                <input type="text" asp-for="@Model.Subject" class="form-control"  />
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea type="text" asp-for="@Model.Message" class="form-control">
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Save</button>
+        </form>
+    </div>
+</div>

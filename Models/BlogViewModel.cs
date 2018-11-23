@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GamingBlog.Models
 {
-    public class Blog
+    public class BlogViewModel
     {
         
         public long BlogID { get; set; }

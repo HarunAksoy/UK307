@@ -1,4 +1,5 @@
 ﻿using System;
+using GamingBlog.Data;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -6,10 +7,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GamingBlog.Models;
 
+
 namespace GamingBlog.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+            
+        }
         
         public IActionResult Index()
         {
@@ -18,36 +27,45 @@ namespace GamingBlog.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            
 
             return View();
         }
+
 
         public IActionResult Games()
         {
-            
-
-            return View();
-        }
-
-        public IActionResult Blog()
-        {
-            
-
             return View();
         }
         
-        [HttpPost]
-        public IActionResult Contact(ContactViewModel vm)
+        public IActionResult Blog()
         {
-            return View();
+
+            
+            return View(_context.Blogs);
+        }
+        
+
+
+        [HttpPost]
+        public IActionResult Contact(ContactViewModel viewModel)
+        {
+            var newContact = new Contact(){
+                Name = viewModel.Name,
+                Email = viewModel.Email,
+                Subject = viewModel.Subject,
+                Message = viewModel.Message
+            };
+            _context.Add(newContact);
+            _context.SaveChanges();
+            return RedirectToAction("Contact");
         }
 
         public IActionResult Privacy()

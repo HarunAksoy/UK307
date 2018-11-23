@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -69,7 +69,7 @@ namespace GamingBlog.Data
             
             //var rnd = new Random();
 
-            foreach(var blog in testBlog.Generate(5)) // thread, thema, Team
+            foreach(var blog in testBlog.Generate(1)) // thread, thema, Team
             {
                 blogs.Add(new
                 {
@@ -83,7 +83,7 @@ namespace GamingBlog.Data
                 
             }
 
-            foreach(var contact in testContact.Generate(20)) // posts / blogeinträge / Players
+            foreach(var contact in testContact.Generate(1)) // posts / blogeinträge / Players
             {
                 contacts.Add(new
                 {
@@ -97,7 +97,7 @@ namespace GamingBlog.Data
               
 
             }
-                foreach(var game in testGame.Generate(20)) // posts / blogeinträge / Players
+                foreach(var game in testGame.Generate(1)) // posts / blogeinträge / Players
             {
                 games.Add(new
                 {
@@ -111,7 +111,7 @@ namespace GamingBlog.Data
 
             }
 
-             foreach(var comment in testComment.Generate(20)) // posts / blogeinträge / Players
+             foreach(var comment in testComment.Generate(1)) // posts / blogeinträge / Players
             {
                 comments.Add(new
                 {
@@ -137,9 +137,3 @@ namespace GamingBlog.Data
         }
     }
 }
-
-
-
-    
-
-
